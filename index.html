@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>n.heo</title>
+
+    <!--
+    - favicon
+  -->
+    <link rel="icon" href="%PUBLIC_URL%/nhlogo.png" />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatar.png"
+              alt="Nicholas Heo"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Nicholas Heo">Nicholas Heo</h1>
+
+            <p class="title">Software Engineer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:nicholas.heo95@gmail.com" class="contact-link"
+                  >nicholas.heo95</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+15713837970" class="contact-link"
+                  >+1 (571) 383-7970</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Washington, DC, USA</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/nicholas-heo-201b44b6/"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://github.com/my-name-is-nheo"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              I am a passionate and dedicated software developer with a strong
+              desire to explore the ever-evolving landscape of technology. Over
+              the years, I have honed my skills in React, Typescript, Node, and
+              GraphQL, enabling me to contribute effectively to projects
+              spanning the entire software stack. I thrive on the challenges of
+              crafting elegant code and solving complex problems.
+            </p>
+
+            <p>
+              When not immersed in the world of programming, you'll often find
+              me in the great outdoors, releasing some stress on the punching
+              bag, or joining in on a game of soccer at a local pickup. And yes,
+              even during these activities, it's not uncommon for me to be
+              pondering that elusive bug I encountered the night before. It
+              seems problem-solving is just as much a part of my off-duty life
+              as it is at work I'm always driven by a relentless curiosity,
+              constantly seeking to improve and grow in my role as a developer.
+            </p>
+          </section>
+          <section class="service">
+            <h3 class="h3 service-title">What I'm doing</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web development</h4>
+
+                  <p class="service-item-text">
+                    High-quality development of sites at the professional level.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-app.svg"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                  <p class="service-item-text">
+                    Professional development of applications for iOS and
+                    Android.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/soccerBall.svg"
+                    alt="soccer icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Soccer</h4>
+
+                  <p class="service-item-text">
+                    Kicking goals on and off the field.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/boxing.svg"
+                    alt="boxing icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Boxing</h4>
+
+                  <p class="service-item-text">
+                    Boxing gloves on one hand, keyboard on the other.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #RESUME
+      -->
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">
+                <a href="./assets/images/Resume.pdf" class="h3" download
+                  >Experience (Full Resume here)</a
+                >
+              </h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Staff Software Engineer, Frontend
+                  <a
+                    class="a company-name"
+                    href="https://www.dottid.com/"
+                    target="_blank"
+                    >Dottid</a
+                  >
+                </h4>
+
+                <span>06/2023 — 10/2023</span>
+
+                <p class="timeline-text">
+                  I play a vital role as an engaged team member, contributing to
+                  the development of state-of-the-art proptech solutions.
+                  Collaboration with fellow engineers is a key part of my work,
+                  ensuring timely project deliveries by swiftly eliminating
+                  obstacles. I take an active role in all project phases, from
+                  initial concept to deployment, and ongoing maintenance, to
+                  ensure seamless project lifecycle management for both web and
+                  mobile projects.
+                  <br />
+                  - Successfully integrated one of the largest investment
+                  management software solutions into our website, earning the
+                  prestigious title of "MRI Software Partner of the Year" in
+                  2023. <br />
+                  - Optimized entire stack for performance and loading speed,
+                  enhancing overall user satisfaction and development time.
+                  <br />
+                  - Designed and implemented the user interface (UI) for a
+                  substantial project using a modern tech stack, including React
+                  for frontend development, Recharts.js for data visualization,
+                  and Material-UI for user interface components. The focus was
+                  on creating an intuitive, visually appealing, and
+                  user-friendly interface.
+                  <br />
+                  - Played a pivotal role in refining the database model to
+                  align with the project's logic and data value types. This
+                  encompassed establishing and maintaining relationships between
+                  data entities and enforcing constraints that determined how
+                  data could be stored and accessed. This effort significantly
+                  contributed to data integrity and consistency.
+                  <br />
+                  - Created communication protocols and contracts between the
+                  MRI server microservice and consumer to facilitate effective
+                  and reliable interaction. These protocols prevented the
+                  duplication of existing resolvers and were implemented with
+                  Axios requests.
+
+                  <br />
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Software Engineer
+                  <a
+                    class="a company-name"
+                    href="https://www.dottid.com/"
+                    target="_blank"
+                    >Dottid</a
+                  >
+                </h4>
+
+                <span>2021 — 2023</span>
+
+                <p class="timeline-text">
+                  - Boosted user experience & authentication by integrating
+                  Google Play & Firebase APIs, launching Dottid's debut Android
+                  app. <br />
+                  - Bolstered mobile security via MFA integration, and v6
+                  migration in Firebase. <br />
+                  - Enhanced front-end codebase with TypeScript and GraphQL
+                  types, reducing bugs and saving development time. <br />
+                  - Stabilized and matured codebase with Jest testing, enabling
+                  comprehensive integration and end-to-end test suites. <br />
+                  - Assist and document development transition to an
+                  Apple-Silicon based workflow.
+                  <br />
+                  - Expanded our GraphQL API in size by double, contributing to
+                  API Design, as well as underlying business logic.
+                  <br />
+                  - Lead scrum retrospectives once per month.
+                  <br />
+                  - Mentored incoming Juniors regarding company tech stack and
+                  mobile development.
+                  <br />
+                  - Performing code reviews to ensure consistency and quality.
+                  <br />
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Software Engineer
+                  <a
+                    class="a company-name"
+                    href="https://www.scopos.tech/orion"
+                    target="_blank"
+                    >Shooter's Technology LLC</a
+                  >
+                </h4>
+
+                <span>2020 — 2021</span>
+
+                <p class="timeline-text">
+                  I played a key role in diagnosing and deploying the mobile
+                  apps, ensuring seamless operation and user satisfaction.
+                  Additionally, I designed an AWS Cloud Architecture using
+                  Amplify to support iOS and Android backends, resulting in
+                  optimal functionality during sport shooting competitions in
+                  JROTC programs, high schools, universities,4-H programs,
+                  junior rifle clubs, and national governing bodies.
+                  <br />
+                  - Optimized apps for latest iOS and Android OS versions,
+                  improving user experience and compatibility <br />
+                  - Designed AWS Cloud Architecture using Amplify to support iOS
+                  and Android backends, achieving optimal functionality.
+                  <br />
+                  - Improved and generated custom components for AWS PubSub to
+                  manage CRUD transactions and communicate with EC2 instances,
+                  streamlining processes.
+                  <br />
+                  - Designed AWS Cloud Architecture using Amplify to support iOS
+                  and Android backends, achieving optimal functionality
+                  <br />
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Software Engineer Contractor
+                  <a class="a company-name" target="_blank"
+                    >Private Dropshipping Client - eCommerce</a
+                  >
+                </h4>
+
+                <span>2020 — 2022</span>
+
+                <p class="timeline-text">
+                  As a private contractor, I developed a Playwright JS script
+                  that automated product data scraping and image downloads from
+                  various manufacturer websites. This automation significantly
+                  improved efficiency and allowed the client to gather prices
+                  and product images effortlessly. This tool contributed to a
+                  remarkable 30% increase in the client's sales, streamlining
+                  his work processes and making them faster and more efficient.
+                  <br />
+                  - Automated product data scraping and image downloads from
+                  manufacturer websites using Playwright JS script, boosting
+                  efficiency. <br />
+                  - Delivered customized online product tool for client to
+                  compare prices and shipping from different retailers (Amazon,
+                  Walmart, B&N) using Node, React, and Express
+                  <br />
+                  - Achieved 100% code coverage by writing unit and functional
+                  tests with Jest and Playwright JS.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Virginia Commonwealth University
+                </h4>
+
+                <span>2013 — 2017</span>
+
+                <p class="timeline-text">Biology and Minor in Chemistry</p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Adaptability, Teamwork</h5>
+                  <data value="100">100%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 100%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Front End Development</h5>
+                  <data value="80">80%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Mobile Development (React Native)</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Agile&Scrum Development Methodologies</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Node.Js</h5>
+                  <data value="60">60%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 60%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">TypeScript</h5>
+                  <data value="60">60%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 60%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">GraphQL</h5>
+                  <data value="50">50%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Mobile Applications</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Web development</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Mobile Applications</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a
+                  href="https://dottid.com/dev-updates/2023/6/28/mri-integration-updates-and-user-facing-uploads"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/PastFuture.jpg"
+                      alt="proptech"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">MRI Integration</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a
+                  href="https://dottid.com/dev-updates/2023/8/24/-new-leasing-performance-visualizations-lease-abstracts-and-refreshed-deal-terms"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/leasingperformance.jpg"
+                      alt="leasingperformance"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Leasing Performance</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a
+                  href="https://dottid.com/dev-updates/september-2022/#CapExProjects"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/capex.jpg"
+                      alt="capex"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Capital Expenditure</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="mobile applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/dottid-files.png"
+                      alt="brawlhalla"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">File Manager</h3>
+
+                  <p class="project-category">Mobile Applications</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="mobile applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/dottid-android.jpg"
+                      alt="summary"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Android launch</h3>
+
+                  <p class="project-category">Mobile Applications</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="mobile applications"
+              >
+                <a href="https://www.scopos.tech/orion">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/orion1.png"
+                      alt="summary"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Live Target Scoring</h3>
+
+                  <p class="project-category">Mobile Applications</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
